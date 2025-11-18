@@ -4,24 +4,47 @@
         <meta charset="UTF-8">
         <title>Profile Page</title>
         <link rel="stylesheet" href="style.css">
+        <script rel="script" src="script.js"></script>
     </head>
     <body>
         <div class="header">
             <div class="myname">Swayam Gaded</div>
             <div class="rick">
-                <div>Click Here</div>
-                <img src="image.png" alt="QR Code">
+                <div>Click Here ></div>
+                <div class="roll">
+                    <img id='photo' src="image.png" alt="QR Code" onclick="video()">
+                    <video id='vid' src="rickroll.mp4" controls preload="auto"></video>
+                </div>
             </div>
         </div>
         <div class="main">
-            <div class="details">
-                <div class="sub">Personal</div>
+            <div class="sub">
+                <button class="title" onclick="toggle(this)">Personal Details</button>
+                <div class="content">
+                    <p>Email: swayamgaded.cs25@rvce.edu.in</p>
+                    <p>Phone Number: 9900847722</p>
+                </div>
             </div>
-            <div class="edu">
-                <div class="sub">Education</div>
+            <div class="sub">
+                <button class="title" onclick="toggle(this)">Education/Qualifications</button>
+                <div class="content">
+                    <p>Degree: BE in CSE at RVCE</p>
+                    <p>PUC: RVPU College</p>
+                    <p>7-10th: DPS Hyderabad</p>
+                    <p>1-6th: BSRNS Bengaluru</p>
+                </div>
             </div>
-            <div class="skills">
-                <div class="sub">Skills</div>
+            <div class="sub">
+                <button class="title" onclick="toggle(this)">Skills</button>
+                <div class="content">
+                    <ul>
+                        <li>Main Langauge: Java from The Complete Reference</li>
+                        <li>Web Dev:<a href="https://www.theodinproject.com/">The Odin Project</a></li>
+                        <li>Linux OS:<a href="https://training.linuxfoundation.org/training/introduction-to-linux/">LFS101 from Linux Foundations</a></li>
+                        <li>Linux Commands:<a href="https://overthewire.org/wargames/bandit">OverTheWire Bandit</a></li>
+                        <li>DSA:<a href="https://leetcode.com/u/Darklord11/">LeetCode</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer">
